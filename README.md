@@ -1,1 +1,1 @@
-Website
+Project containing a basic structure for creating a website with Grunt and SASS configured.
