@@ -1,0 +1,8 @@
+node_modules
+docs
+.sass-cache
+public/css
+public/js
+src/css/min
+src/js/min
+*.map
