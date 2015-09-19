@@ -1,0 +1,14 @@
+/*Function to sum two measures*/
+@function sum($a, $b) {
+  	@return $a + $b;
+}
+
+/*Function to calculate the percentage*/
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+/*Shortcode to use the calc-percent function*/
+@function cp($target, $container) {
+  @return calc-percent($target, $container);
+}

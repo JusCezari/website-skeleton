@@ -1,17 +1,19 @@
 {
-  "name": "website",
+  "name": "website-skeleton",
   "version": "1.0.0",
-  "description": "File for NPM packages used in the Website.",
+  "description": "File for NPM packages used in a Website.",
   "author": "Julio Lara",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JusCezari/website-skeleton"
+    "url": "https://github.com/juscezari/website-skeleton/"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-grunticon": "^1.0.0",
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-uglify": "^0.2.0"
+    "grunt-contrib-uglify": "^0.2.0",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }

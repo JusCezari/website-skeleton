@@ -23,7 +23,7 @@
 	<meta property="og:image:width" content="200">
 	<meta property="og:image:height" content="200">
 
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
 
 	<script type="text/javascript">
 		  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,7 +36,7 @@
 
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/main.min.css">
 
 </head>
 
@@ -44,9 +44,18 @@
 
 	<section class="container clearfix">
 
+		The quick brown fox jumps over the lazy dog.
+
 	</section>
 
-<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="public/js/main.min.js"></script>
+
+<script>
+    /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+    window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+    grunticon(["public/css/icons.data.svg.css", "public/css/icons.data.png.css", "public/css/icons.fallback.css"]);
+</script>
+<noscript><link href="public/css/icons.fallback.css" rel="stylesheet"></noscript>
 
 </body>
 

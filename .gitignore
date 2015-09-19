@@ -1,8 +1,11 @@
+void
 node_modules
-docs
-.sass-cache
+src/js/grunticon.loader.js
 public/css
 public/js
+public/images/icons/png
 src/css/min
+src/css
 src/js/min
-*.map
+*/*.map
+.sass-cache

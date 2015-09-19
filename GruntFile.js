@@ -48,6 +48,38 @@ module.exports = function(grunt) {
 		    },
 		},
 
+		grunticon: {
+            general: {
+                files: [{
+                    expand: true,
+                    cwd: 'public/images/icons/svg',
+                    src: ['*.svg', '*.png'],
+                    dest: "public/css"
+                }],
+                options: {
+                    loadersnippet: "../js/grunticon.loader.js",
+                    pngfolder: "../images/icons/png"
+                }
+            }
+        },
+
+		watch: {
+            sass: {
+                files: [
+            		'**/src/sass/*.scss',
+            		'**/src/sass/pages/*.scss',
+            		'**/src/sass/partials/*.scss',
+            		'**/src/sass/global/*.scss',
+            		'**/src/sass/helpers/*.scss'
+            		],
+                tasks: ['sass','concat:css'],
+            },
+            js: {
+                files: ['**/src/js/*.js'],
+                tasks: ['uglify','concat:js'],
+            }
+        },
+
 		concat: {
             css: {
                 files: {
@@ -70,6 +102,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-grunticon');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['sass','uglify','concat']);
 
